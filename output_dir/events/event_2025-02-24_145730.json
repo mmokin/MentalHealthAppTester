@@ -1,0 +1,12 @@
+{
+  "tag": "2025-02-24_145730",
+  "event": {
+    "event_type": "kill_app",
+    "log_lines": null,
+    "prompt": null,
+    "stop_intent": "am force-stop com.getsomeheadspace.android"
+  },
+  "start_state": "6e20be5d2efb2ec99df031f613ac8baa",
+  "stop_state": "6e20be5d2efb2ec99df031f613ac8baa",
+  "event_str": "KillAppEvent()"
+}

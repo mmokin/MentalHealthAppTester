@@ -1,0 +1,454 @@
+Activity Resolver Table:
+  Schemes:
+      headspaceauth:
+        2164c38 com.getsomeheadspace.android/com.auth0.android.provider.RedirectActivity filter a07b411
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "headspaceauth"
+          Authority: "auth.headspace.com": -1
+          Path: "PatternMatcher{PREFIX: /android/com.getsomeheadspace.android/callback}"
+      com.getsomeheadspace.android:
+        fade552 com.getsomeheadspace.android/.common.deeplinks.DeepLinkActivity filter 3aa074c
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "com.getsomeheadspace.android"
+      headspace:
+        fade552 com.getsomeheadspace.android/.common.deeplinks.DeepLinkActivity filter 855d023
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "headspace"
+      https:
+        fade552 com.getsomeheadspace.android/.common.deeplinks.DeepLinkActivity filter 67920
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "hdsp.co": -1
+          AutoVerify=true
+        fade552 com.getsomeheadspace.android/.common.deeplinks.DeepLinkActivity filter a6982d9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "links.info.headspace.com": -1
+          Path: "PatternMatcher{PREFIX: /uni}"
+          AutoVerify=true
+        fade552 com.getsomeheadspace.android/.common.deeplinks.DeepLinkActivity filter 1a1049e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "links.notifications.headspace.com": -1
+          Path: "PatternMatcher{PREFIX: /uni}"
+          AutoVerify=true
+        fade552 com.getsomeheadspace.android/.common.deeplinks.DeepLinkActivity filter 12b4b7f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "links.message.headspace.com": -1
+          Path: "PatternMatcher{PREFIX: /uni}"
+          AutoVerify=true
+        fade552 com.getsomeheadspace.android/.common.deeplinks.DeepLinkActivity filter e667395
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "headspace.app.link": -1
+          Authority: "headspace-alternate.app.link": -1
+          Authority: "headspace-alternate.test-app.link": -1
+          AutoVerify=true
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        314ccaa com.getsomeheadspace.android/.splash.SplashActivity filter bb3209b
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        51b45a com.getsomeheadspace.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f59668b
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        d63db7c com.getsomeheadspace.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter e4c6c05
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        90f29fe com.getsomeheadspace.android/androidx.profileinstaller.ProfileInstallReceiver filter 2996075
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        d13368 com.getsomeheadspace.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 12cc381
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.MAIN:
+        2ba6a50 com.getsomeheadspace.android/com.qualtrics.digital.QualtricsNotificationManager filter fa3d449
+          Action: "android.intent.action.MAIN"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        a66bc26 com.getsomeheadspace.android/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 675e067
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        44b0976 com.getsomeheadspace.android/.reminder.service.AlarmBroadcastReceiver filter 8192b77
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.DEVICE_STORAGE_OK:
+        d13368 com.getsomeheadspace.android/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 12cc381
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.intent.action.LOCALE_CHANGED:
+        5d64702 com.getsomeheadspace.android/.languagepreference.receiver.LanguageBroadcastReceiver filter 36b0813
+          Action: "android.intent.action.LOCALE_CHANGED"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        90f29fe com.getsomeheadspace.android/androidx.profileinstaller.ProfileInstallReceiver filter 2b4755f
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.google.android.c2dm.intent.RECEIVE:
+        2fff3e4 com.getsomeheadspace.android/com.mparticle.MPReceiver filter 9a2804d
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+          Category: "com.getsomeheadspace.android"
+        ce5d14e com.getsomeheadspace.android/com.google.firebase.iid.FirebaseInstanceIdReceiver filter 3f4126f
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+      android.intent.action.BATTERY_LOW:
+        51b45a com.getsomeheadspace.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter f59668b
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        13a1e14 com.getsomeheadspace.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 26116bd
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.TIME_SET:
+        13a1e14 com.getsomeheadspace.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 26116bd
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        90f29fe com.getsomeheadspace.android/androidx.profileinstaller.ProfileInstallReceiver filter 9131bac
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        90f29fe com.getsomeheadspace.android/androidx.profileinstaller.ProfileInstallReceiver filter 62fe80a
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        44b0976 com.getsomeheadspace.android/.reminder.service.AlarmBroadcastReceiver filter 8192b77
+          Action: "android.intent.action.LOCKED_BOOT_COMPLETED"
+          Action: "android.intent.action.BOOT_COMPLETED"
+        13a1e14 com.getsomeheadspace.android/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 26116bd
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.BOOT_COMPLETED"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        d63db7c com.getsomeheadspace.android/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter e4c6c05
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        ca50780 com.getsomeheadspace.android/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 78d61b9
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        b7274b2 com.getsomeheadspace.android/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 2f61c03
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.MESSAGING_EVENT:
+        22c8ef1 com.getsomeheadspace.android/com.braze.push.BrazeFirebaseMessagingService filter fec7ad6
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        ca1b157 com.getsomeheadspace.android/com.google.firebase.messaging.FirebaseMessagingService filter 52b3444
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+      android.media.browse.MediaBrowserService:
+        cd5087b com.getsomeheadspace.android/.player.service.PlayerService filter 96c4698
+          Action: "android.media.browse.MediaBrowserService"
+          Action: "android.intent.action.MEDIA_BUTTON"
+      android.intent.action.MEDIA_BUTTON:
+        cd5087b com.getsomeheadspace.android/.player.service.PlayerService filter 96c4698
+          Action: "android.media.browse.MediaBrowserService"
+          Action: "android.intent.action.MEDIA_BUTTON"
+
+Domain verification status:
+  com.getsomeheadspace.android:
+    ID: 882adfa0-a61d-4a54-91d9-9bf1f4eb9645
+    Signatures: [A1:62:12:92:F3:7A:0C:B1:CD:93:8B:97:A5:23:F6:54:8C:ED:FE:92:3A:BD:AA:37:CC:BF:BB:20:F6:01:2F:B4]
+    Domain verification state:
+      headspace-alternate.test-app.link: none
+      headspace-alternate.app.link: none
+      headspace.app.link: none
+      links.message.headspace.com: none
+      links.info.headspace.com: none
+      hdsp.co: none
+      links.notifications.headspace.com: none
+    User all:
+      Verification link handling allowed: true
+      Selection state:
+        Disabled:
+          headspace-alternate.test-app.link
+          headspace-alternate.app.link
+          headspace.app.link
+          links.message.headspace.com
+          links.info.headspace.com
+          hdsp.co
+          links.notifications.headspace.com
+
+Permissions:
+  Permission [com.getsomeheadspace.android.sdk.permission-group.ipc.sender] (777c20d):
+    sourcePackage=com.getsomeheadspace.android
+    uid=10197 gids=[] type=0 prot=signature
+    perm=PermissionInfo{e2bc5c2 com.getsomeheadspace.android.sdk.permission-group.ipc.sender}
+    flags=0x0
+
+Permissions:
+  Permission [com.getsomeheadspace.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (4f07fd3):
+    sourcePackage=com.getsomeheadspace.android
+    uid=10197 gids=[] type=0 prot=signature
+    perm=PermissionInfo{18ae710 com.getsomeheadspace.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.getsomeheadspace.android/.common.startup.StartupProvider:
+    Provider{eb7209 com.getsomeheadspace.android/.common.startup.StartupProvider}
+  com.getsomeheadspace.android/androidx.core.content.FileProvider:
+    Provider{cf47c0e com.getsomeheadspace.android/androidx.core.content.FileProvider}
+  com.getsomeheadspace.android/com.sidlatau.flutteremailsender.FlutterEmailSenderFileProvider:
+    Provider{2b9462f com.getsomeheadspace.android/com.sidlatau.flutteremailsender.FlutterEmailSenderFileProvider}
+  com.getsomeheadspace.android/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{39f643c com.getsomeheadspace.android/com.google.firebase.provider.FirebaseInitProvider}
+  com.getsomeheadspace.android/.core.common.files.GenericFileProvider:
+    Provider{dd025c5 com.getsomeheadspace.android/.core.common.files.GenericFileProvider}
+  com.getsomeheadspace.android/androidx.startup.InitializationProvider:
+    Provider{8804b1a com.getsomeheadspace.android/androidx.startup.InitializationProvider}
+  com.getsomeheadspace.android/io.sentry.android.core.SentryPerformanceProvider:
+    Provider{59e164b com.getsomeheadspace.android/io.sentry.android.core.SentryPerformanceProvider}
+  com.getsomeheadspace.android/io.sentry.android.core.SentryInitProvider:
+    Provider{81c8828 com.getsomeheadspace.android/io.sentry.android.core.SentryInitProvider}
+
+ContentProvider Authorities:
+  [com.getsomeheadspace.android.firebaseinitprovider]:
+    Provider{39f643c com.getsomeheadspace.android/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{c925941 com.getsomeheadspace.android}
+  [com.getsomeheadspace.android.SentryInitProvider]:
+    Provider{81c8828 com.getsomeheadspace.android/io.sentry.android.core.SentryInitProvider}
+      applicationInfo=ApplicationInfo{ac7fee6 com.getsomeheadspace.android}
+  [com.getsomeheadspace.android.SentryPerformanceProvider]:
+    Provider{59e164b com.getsomeheadspace.android/io.sentry.android.core.SentryPerformanceProvider}
+      applicationInfo=ApplicationInfo{2b5cc27 com.getsomeheadspace.android}
+  [com.getsomeheadspace.android.file_provider]:
+    Provider{2b9462f com.getsomeheadspace.android/com.sidlatau.flutteremailsender.FlutterEmailSenderFileProvider}
+      applicationInfo=ApplicationInfo{8c5fed4 com.getsomeheadspace.android}
+  [com.getsomeheadspace.android.fileprovider]:
+    Provider{cf47c0e com.getsomeheadspace.android/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{bea487d com.getsomeheadspace.android}
+  [com.getsomeheadspace.android.androidx-startup]:
+    Provider{8804b1a com.getsomeheadspace.android/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{2852372 com.getsomeheadspace.android}
+  [com.getsomeheadspace.android.provider]:
+    Provider{dd025c5 com.getsomeheadspace.android/.core.common.files.GenericFileProvider}
+      applicationInfo=ApplicationInfo{fa903c3 com.getsomeheadspace.android}
+  [com.getsomeheadspace.android.StartupProvider]:
+    Provider{eb7209 com.getsomeheadspace.android/.common.startup.StartupProvider}
+      applicationInfo=ApplicationInfo{5ee3440 com.getsomeheadspace.android}
+
+Key Set Manager:
+  [com.getsomeheadspace.android]
+      Signing KeySets: 62
+
+Packages:
+  Package [com.getsomeheadspace.android] (3d7ef79):
+    appId=10197
+    pkg=Package{e7e04be com.getsomeheadspace.android}
+    codePath=/data/app/~~9-ykr2wtpLFBb4K92B5pvA==/com.getsomeheadspace.android-NR2cvrTWXS-mgl960jY9Ow==
+    resourcePath=/data/app/~~9-ykr2wtpLFBb4K92B5pvA==/com.getsomeheadspace.android-NR2cvrTWXS-mgl960jY9Ow==
+    legacyNativeLibraryDir=/data/app/~~9-ykr2wtpLFBb4K92B5pvA==/com.getsomeheadspace.android-NR2cvrTWXS-mgl960jY9Ow==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=x86_64
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=378640 minSdk=24 targetSdk=34
+    minExtensionVersions=[]
+    versionName=4.211.0
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[com.ginger]
+    queriesIntents=[Intent { act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https:/... }, Intent { act=android.media.browse.MediaBrowserService }, Intent { act=androidx.media2.session.MediaSessionService }, Intent { act=androidx.media2.session.MediaLibraryService }, Intent { act=android.media.action.IMAGE_CAPTURE }, Intent { act=android.settings.action.MANAGE_OVERLAY_PERMISSION }, Intent { act=android.intent.action.VIEW }, Intent { act=android.intent.action.SENDTO }, Intent { act=android.intent.action.MAIN }, Intent { act=android.intent.action.EDIT }, Intent { act=android.intent.action.GET_CONTENT }, Intent { act=us.zoom.videomeetings.intent.action.JoinBeforeHost }, Intent { act=us.zoom.videomeetings.intent.action.CallMyPhone }, Intent { act=us.zoom.videomeetings.intent.action.MeetingInvite }, Intent { act=com.android.vending.billing.InAppBillingService.BIND }]
+    dataDir=/data/user/0/com.getsomeheadspace.android
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesOptionalNativeLibraries:
+      libOpenCL-pixel.so
+      libOpenCL.so
+    usesLibraryFiles:
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2025-02-24 18:28:51
+    lastUpdateTime=2025-02-24 18:28:56
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=com.android.shell
+    originatingPackageName=null
+    packageSource=1
+    appMetadataFilePath=null
+    signatures=PackageSignatures{a0e191f version:3, signatures:[4d24668a], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.getsomeheadspace.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.getsomeheadspace.android.sdk.permission-group.ipc.sender: prot=signature
+    requested permissions:
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.INTERNET
+      android.permission.VIBRATE
+      com.android.vending.BILLING
+      android.permission.FOREGROUND_SERVICE
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      android.permission.READ_CALENDAR
+      android.permission.WRITE_CALENDAR
+      android.permission.READ_MEDIA_IMAGES
+      android.permission.WAKE_LOCK
+      android.permission.SCHEDULE_EXACT_ALARM
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.gms.permission.AD_ID
+      android.permission.CALL_PHONE
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.USE_BIOMETRIC
+      android.permission.USE_FINGERPRINT
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.getsomeheadspace.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.READ_PHONE_STATE
+      android.permission.BLUETOOTH
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH_SCAN
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.BROADCAST_STICKY
+      android.permission.RECORD_AUDIO
+      android.permission.CAMERA
+      android.permission.SYSTEM_ALERT_WINDOW
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.FOREGROUND_SERVICE_MICROPHONE
+      android.permission.FOREGROUND_SERVICE_PHONE_CALL
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.USE_FULL_SCREEN_INTENT
+      android.permission.REORDER_TASKS
+      com.getsomeheadspace.android.sdk.permission-group.ipc.sender
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      android.permission.READ_EXTERNAL_STORAGE
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.SYSTEM_ALERT_WINDOW: granted=false
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.getsomeheadspace.android.sdk.permission-group.ipc.sender: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      android.permission.SCHEDULE_EXACT_ALARM: granted=false
+      com.getsomeheadspace.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      android.permission.FOREGROUND_SERVICE_PHONE_CALL: granted=true
+    User 0: ceDataInode=337027 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2025-02-24 18:28:56
+      uninstallReason=0
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.READ_CALENDAR: granted=false
+        android.permission.POST_NOTIFICATIONS: granted=false
+        android.permission.ACCESS_FINE_LOCATION: granted=false
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=false
+        android.permission.BLUETOOTH_CONNECT: granted=false
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ REVOKE_WHEN_REQUESTED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=false
+        android.permission.READ_PHONE_STATE: granted=false
+        android.permission.CALL_PHONE: granted=false
+        android.permission.READ_MEDIA_IMAGES: granted=false
+        android.permission.CAMERA: granted=false
+        android.permission.WRITE_CALENDAR: granted=false
+        android.permission.READ_MEDIA_VIDEO: granted=false
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false
+        android.permission.BLUETOOTH_SCAN: granted=false
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.settings.intelligence:
+      com.getsomeheadspace.android
+    com.google.android.apps.messaging:
+      com.getsomeheadspace.android
+    com.getsomeheadspace.android:
+      [com.google.android.bluetooth,com.android.bluetooth]
+      com.google.android.documentsui
+      com.google.android.settings.intelligence
+      com.google.android.apps.restore
+      com.google.android.projection.gearhead
+      com.android.imsserviceentitlement
+      com.google.android.as
+      com.google.android.apps.messaging
+      com.google.android.dialer
+      com.google.android.googlequicksearchbox
+      com.google.android.calendar
+      com.android.chrome
+      com.google.android.youtube
+      com.google.android.apps.maps
+      com.google.android.apps.photos
+      com.android.camera2
+      com.google.android.apps.youtube.music
+      com.google.android.gm
+      com.google.android.deskclock
+      com.google.android.contacts
+      com.google.android.apps.docs
+      com.google.android.inputmethod.latin
+      com.google.android.apps.nexuslauncher
+      com.google.android.apps.wallpaper
+      com.android.cts.priv.ctsshim
+      com.android.cts.ctsshim
+      com.google.android.cellbroadcastreceiver
+      com.google.android.healthconnect.controller
+      com.cerebral.cerebral
+      io.github.ylimit.droidbotapp
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.getsomeheadspace.android]
+    path: /data/app/~~9-ykr2wtpLFBb4K92B5pvA==/com.getsomeheadspace.android-NR2cvrTWXS-mgl960jY9Ow==/base.apk
+      x86_64: [status=run-from-apk] [reason=unknown] [primary-abi]
+        [location is error]
+
+Compiler stats:
+  [com.getsomeheadspace.android]
+     base.apk - 6927
